@@ -21,6 +21,43 @@ st.set_page_config(
     layout="wide"
 )
 
+# Team Information
+st.markdown("# Advanced Data Analytics Lab Exercise 8 & 9")
+st.markdown("### Team Members:")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.markdown("""
+    **Andrew Biju Ninan**  
+    ID: 2447108  
+    Role: Data Preprocessing
+    """)
+
+with col2:
+    st.markdown("""
+    **Samuel Alex Koshy**  
+    ID: 2447146  
+    Role: Random Forest Classification
+    """)
+
+with col3:
+    st.markdown("""
+    **Amal Jyothi S**  
+    ID: 2447206  
+    Role: Logistic Regression
+    """)
+
+with col4:
+    st.markdown("""
+    **Sumith Meena**  
+    ID: 2447252  
+    Role: Streamlit UI
+    """)
+
+st.markdown("---")
+
+
 # Main title
 st.title("Diabetic Patient Readmission Analysis")
 st.write("This comprehensive analysis covers data exploration, preprocessing, machine learning models, and clinical insights.")

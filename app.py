@@ -662,15 +662,14 @@ st.write("- External validation on different hospital systems")
 # Final Conclusions
 st.subheader("Final Conclusions")
 
+
 st.write("**Summary:**")
-st.write("This analysis demonstrates the potential of machine learning in predicting diabetic patient readmissions. "
-         "Both Random Forest and Logistic Regression models show promising results, with each having distinct advantages:")
+st.write("This analysis demonstrates the potential of machine learning in predicting diabetic patient readmissions. Both Random Forest and Logistic Regression models show promising results, with each having distinct advantages:")
 
 st.write("- **Random Forest** excels at capturing complex patterns and provides robust predictions")
 st.write("- **Logistic Regression** offers better interpretability and clinical transparency")
 
-st.write("The models can serve as valuable decision support tools for healthcare providers, "
-         "helping identify high-risk patients who would benefit from enhanced discharge planning and follow-up care.")
+st.write("The models can serve as valuable decision support tools for healthcare providers, helping identify high-risk patients who would benefit from enhanced discharge planning and follow-up care.")
 
 st.write("**Impact:** Early identification of high-risk patients can lead to:")
 st.write("- Reduced readmission rates")
@@ -678,6 +677,52 @@ st.write("- Better patient outcomes")
 st.write("- Optimized healthcare resource utilization")
 st.write("- Cost savings for healthcare systems")
 
+# Additional ADA-inspired interpretation
+st.markdown("---")
+st.subheader("ADA Guidelines Interpretation and Clinical Relevance")
+
+st.write("**Alignment with ADA Standards of Care:**")
+st.write("- The American Diabetes Association (ADA) emphasizes the importance of reducing hospital readmissions through comprehensive discharge planning, medication reconciliation, and patient education.")
+st.write("- Predictive analytics, as demonstrated in this report, can help clinicians identify patients at highest risk for readmission, enabling targeted interventions in line with ADA recommendations.")
+
+st.write("**Clinical Decision Support:**")
+st.write("- Machine learning models can supplement clinical judgment, but should not replace individualized patient care.")
+st.write("- ADA guidelines recommend multidisciplinary approaches, including diabetes educators, pharmacists, and care coordinators, to address risk factors identified by the models.")
+
+st.write("**Patient-Centered Care:**")
+st.write("- According to ADA, patient engagement and self-management support are critical. The insights from this analysis can inform personalized education and follow-up strategies.")
+
+st.write("**Medication and Transition of Care:**")
+st.write("- ADA highlights the need for careful medication management during transitions of care. The model's identification of medication changes as a risk factor supports this guideline.")
+
+st.write("**Limitations and Ethical Considerations:**")
+st.write("- ADA cautions that predictive models should be validated on diverse populations and used transparently.")
+st.write("- Equity in care delivery is essential; models should be monitored for bias and fairness.")
+
+st.write("**Summary Table: ADA Recommendations vs. Model Insights**")
+ada_table = pd.DataFrame({
+    'ADA Recommendation': [
+        'Comprehensive discharge planning',
+        'Medication reconciliation',
+        'Patient education and engagement',
+        'Multidisciplinary care team',
+        'Follow-up and transitions of care',
+        'Monitor for bias and equity'
+    ],
+    'Model Insight': [
+        'Enhanced discharge planning for high-risk patients',
+        'Medication changes as key risk factor',
+        'Patient-centered follow-up for high-risk groups',
+        'Use model to inform care team interventions',
+        'Early follow-up for those at risk',
+        'Acknowledge limitations and validate on real data'
+    ]
+})
+st.dataframe(ada_table)
+
+st.write("**Conclusion:**")
+st.write("Integrating ADA guidelines with predictive analytics can optimize care for diabetic patients, reduce readmissions, and improve outcomes. Ongoing validation and ethical use of models are essential for clinical impact.")
+
 # Footer
 st.markdown("---")
-st.write("**Analysis completed successfully.** This comprehensive report covers all aspects of the diabetic patient readmission prediction project, from data exploration to clinical insights.")
+st.write("**Analysis completed successfully.** This comprehensive report covers all aspects of the diabetic patient readmission prediction project, from data exploration to clinical insights and ADA guideline interpretation.")

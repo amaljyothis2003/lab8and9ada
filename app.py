@@ -45,7 +45,7 @@ with col3:
     st.markdown("""
     **Amal Jyothi S**  
     ID: 2447206  
-    Role: Logistic Regression
+    Role: Logistic Regression and UI
     """)
 
 with col4:
